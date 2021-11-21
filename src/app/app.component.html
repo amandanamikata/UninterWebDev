@@ -1,11 +1,7 @@
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
-<!-- * * * * * * * to get started with your project! * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<!-- CSS e estilização da pagina -->
+<!-- Professores eu manti o css de exemplo do app no momento que é criado
+e fiz algumas modificaçoes em cima dele -->
 
 <style>
   :host {
@@ -198,7 +194,7 @@
     margin: 60px;
   }
 </style>
-
+<!-- Inicio do HTML do projeto e inserções particulares do ANGULAR -->
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img
@@ -252,7 +248,6 @@
     </svg>
   </a>
 </div>
-
 <div class="content" role="main">
   <!-- CARD DO TITULO-->
     <div class="card highlight-card card-small">
@@ -298,8 +293,7 @@
     <span>LISTA DE ALUNOS</span>
   </div>
 
-  <!-- TRABALHO AMANDA NAMIKATA -->
-  <!-- Tabela que peguei do site do boostrap e depois substitui os resultados -->
+  <!-- Tabela que peguei do site do boostrap e depois substitui os resultados  e também adicionei uma classe para ajustar o tamanho-->
   <div class="amanda-table">
     <table class="table">
       <thead>
@@ -312,7 +306,7 @@
         </tr>
       </thead>
       <tbody>
-        <!-- For looping  -->
+        <!-- For looping requisitado na atividade -->
         <tr *ngFor="let item of data">
           <th scope="row">{{ item.id }}</th>
           <td>{{ item.name }}</td>
@@ -323,7 +317,7 @@
       </tbody>
     </table>
   </div>
-  <!-- Footer -->
+  <!-- Footer NUVENS-->
   <svg
     id="clouds"
     xmlns="http://www.w3.org/2000/svg"
